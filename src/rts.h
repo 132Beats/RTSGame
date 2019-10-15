@@ -6,9 +6,11 @@
 #define RTS_RTS_H
 
 
-class rts {
-
+class RTS {
+public:
+    RTS();
+    ~RTS();
+    int start(int argc, char** argv);
+private:
 };
-
-
 #endif //RTS_RTS_H

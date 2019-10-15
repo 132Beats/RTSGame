@@ -3,15 +3,19 @@
 //#include <fstream>
 
 
+#include <memory>
+#include "rts.h"
 int main(int argc, char** argv) {
-	try {
-	}
-	catch (...) {
-		return 1;
-	}
-	
+    try {
+        RTS rts;
+        return rts.start(argc,argv);
+    }
+    catch (...) {
+        return 1;
+    }
 
-	return 1;
+
+    return 1;
 
 }
 

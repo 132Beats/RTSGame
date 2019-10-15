@@ -18,7 +18,7 @@ project(rts)
 
 add_executable(main
 		src/main.cpp
-		)
+		src/mockwindow.cpp src/mockwindow.h src/rts.cpp src/rts.h src/QOpenGLWindow.cpp src/QOpenGLWindow.h)
 
 
 #Qt5
