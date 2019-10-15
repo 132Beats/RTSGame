@@ -14,3 +14,9 @@ Smithy (Weaponsmith vs Amorer vs Toolsmith)
 Fletcher
 Cartograph
 Priest?
+Outpost
+Kaserne
+Rittertunierfeld
+Schießstand
+
+
