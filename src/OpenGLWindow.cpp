@@ -1,11 +1,17 @@
 //
-// Created by hendrik on 15.10.19.
+// Created by hendrik on 16.10.19.
 //
 
-#include <QtGui/QPainter>
-#include "QOpenGLWindow.h"
+#include "OpenGLWindow.h"
 
-QOpenGLWindow::QOpenGLWindow(QWindow *parent)
+#include <QtCore/QCoreApplication>
+
+#include <QtGui/QOpenGLContext>
+#include <QtGui/QOpenGLPaintDevice>
+#include <QtGui/QPainter>
+
+//! [1]
+OpenGLWindow::OpenGLWindow(QWindow *parent)
         : QWindow(parent)
         , m_animating(false)
         , m_context(0)
@@ -13,18 +19,23 @@ QOpenGLWindow::QOpenGLWindow(QWindow *parent)
 {
     setSurfaceType(QWindow::OpenGLSurface);
 }
+//! [1]
 
-QOpenGLWindow::~QOpenGLWindow(){}
-void QOpenGLWindow::render(QPainter *painter)
+OpenGLWindow::~OpenGLWindow()
+{
+    delete m_device;
+}
+//! [2]
+void OpenGLWindow::render(QPainter *painter)
 {
     Q_UNUSED(painter);
 }
 
-void QOpenGLWindow::initialize()
+void OpenGLWindow::initialize()
 {
 }
 
-void QOpenGLWindow::render()
+void OpenGLWindow::render()
 {
     if (!m_device)
         m_device = new QOpenGLPaintDevice;
@@ -37,12 +48,15 @@ void QOpenGLWindow::render()
     QPainter painter(m_device);
     render(&painter);
 }
-void QOpenGLWindow::renderLater()
+//! [2]
+
+//! [3]
+void OpenGLWindow::renderLater()
 {
     requestUpdate();
 }
 
-bool QOpenGLWindow::event(QEvent *event)
+bool OpenGLWindow::event(QEvent *event)
 {
     switch (event->type()) {
         case QEvent::UpdateRequest:
@@ -53,15 +67,17 @@ bool QOpenGLWindow::event(QEvent *event)
     }
 }
 
-void QOpenGLWindow::exposeEvent(QExposeEvent *event)
+void OpenGLWindow::exposeEvent(QExposeEvent *event)
 {
     Q_UNUSED(event);
 
     if (isExposed())
         renderNow();
 }
+//! [3]
 
-void QOpenGLWindow::renderNow()
+//! [4]
+void OpenGLWindow::renderNow()
 {
     if (!isExposed())
         return;
@@ -90,11 +106,14 @@ void QOpenGLWindow::renderNow()
     if (m_animating)
         renderLater();
 }
+//! [4]
 
-void QOpenGLWindow::setAnimating(bool animating)
+//! [5]
+void OpenGLWindow::setAnimating(bool animating)
 {
     m_animating = animating;
 
     if (animating)
         renderLater();
 }
+//! [5]

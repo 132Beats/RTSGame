@@ -1,21 +1,27 @@
 //
-// Created by hendrik on 15.10.19.
+// Created by hendrik on 16.10.19.
 //
 
-#ifndef RTS_QOPENGLWINDOW_H
-#define RTS_QOPENGLWINDOW_H
+#ifndef RTS_OPENGLWINDOW_H
+#define RTS_OPENGLWINDOW_H
 
 
 #include <QtGui/QWindow>
 #include <QtGui/QOpenGLFunctions>
-#include <QtGui/QOpenGLPaintDevice>
 
-class QOpenGLWindow : public QWindow, protected QOpenGLFunctions
+QT_BEGIN_NAMESPACE
+class QPainter;
+class QOpenGLContext;
+class QOpenGLPaintDevice;
+QT_END_NAMESPACE
+
+//! [1]
+class OpenGLWindow : public QWindow, protected QOpenGLFunctions
 {
-    Q_OBJECT
+Q_OBJECT
 public:
-    explicit QOpenGLWindow(QWindow *parent = 0);
-    ~QOpenGLWindow();
+    explicit OpenGLWindow(QWindow *parent = 0);
+    ~OpenGLWindow();
 
     virtual void render(QPainter *painter);
     virtual void render();
@@ -25,7 +31,7 @@ public:
     void setAnimating(bool animating);
 
 public slots:
-            void renderLater();
+    void renderLater();
     void renderNow();
 
 protected:
@@ -39,5 +45,8 @@ private:
     QOpenGLContext *m_context;
     QOpenGLPaintDevice *m_device;
 };
+//! [1]
 
-#endif //RTS_QOPENGLWINDOW_H
+
+
+#endif //RTS_OPENGLWINDOW_H
