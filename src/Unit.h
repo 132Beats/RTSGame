@@ -8,7 +8,7 @@
 
 #include "Weapon.h"
 
-class Human {
+class Unit {
 protected:
     float health;
     float armor;
