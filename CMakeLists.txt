@@ -26,7 +26,7 @@ add_executable(main
 		src/OpenGLWindow.h
 		lib/stb_image.cpp
 		lib/stb_image.h
-		src/Texture.cpp src/Texture.h src/Unit.cpp src/Unit.h src/Weapon.cpp src/Weapon.h src/RangedWeapon.cpp src/RangedWeapon.h)
+		src/Texture.cpp src/Texture.h src/Human.cpp src/Human.h src/Weapon.cpp src/Weapon.h src/RangedWeapon.cpp src/RangedWeapon.h src/Animal.cpp src/Animal.h src/Monster.cpp src/Monster.h)
 
 
 #Qt5
