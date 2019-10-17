@@ -3,7 +3,7 @@
 //
 
 #include <QtWidgets/QApplication>
-#include "rts.h"
+#include "RTS.h"
 #include <memory>
 #include <QtGui/QSurfaceFormat>
 #include "OpenGLWindow.h"

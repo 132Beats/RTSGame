@@ -4,7 +4,7 @@
 
 
 #include <memory>
-#include "rts.h"
+#include "RTS.h"
 int main(int argc, char** argv) {
     try {
         RTS rts;

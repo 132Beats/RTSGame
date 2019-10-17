@@ -18,7 +18,6 @@ private:
 public:
     Texture(const std::string& path);
 
-    Texture(const std::string &mFilePath);
 
     ~Texture();
 

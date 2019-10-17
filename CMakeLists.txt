@@ -20,13 +20,13 @@ add_executable(main
 		src/main.cpp
 		src/mockwindow.cpp
 		src/mockwindow.h
-		src/rts.cpp
-		src/rts.h
+		src/RTS.cpp
+		src/RTS.h
 		src/OpenGLWindow.cpp
 		src/OpenGLWindow.h
 		lib/stb_image.cpp
 		lib/stb_image.h
-		src/Texture.cpp src/Texture.h)
+		src/Texture.cpp src/Texture.h src/Unit.cpp src/Unit.h src/Weapon.cpp src/Weapon.h src/RangedWeapon.cpp src/RangedWeapon.h)
 
 
 #Qt5
