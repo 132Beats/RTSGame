@@ -22,7 +22,11 @@ add_executable(main
 		src/mockwindow.h
 		src/rts.cpp
 		src/rts.h
-		src/OpenGLWindow.cpp src/OpenGLWindow.h)
+		src/OpenGLWindow.cpp
+		src/OpenGLWindow.h
+		lib/stb_image.cpp
+		lib/stb_image.h
+		src/Texture.cpp src/Texture.h)
 
 
 #Qt5
