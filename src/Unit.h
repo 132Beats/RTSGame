@@ -11,8 +11,6 @@
 class Unit {
 protected:
     float health;
-    float armor;
-    Weapon weapon;
 };
 
 
