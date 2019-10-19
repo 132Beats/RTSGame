@@ -6,7 +6,7 @@
 #define RTS_VILLAGER_H
 
 
-#include "Unit.h"
+#include "MoveableUnit.h"
 
 class Villager : public Unit{
 

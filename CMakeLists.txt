@@ -26,7 +26,7 @@ add_executable(main
 		src/OpenGLWindow.h
 		lib/stb_image.cpp
 		lib/stb_image.h
-		src/Texture.cpp src/Texture.h src/Unit.cpp src/Unit.h src/Weapon.cpp src/Weapon.h src/RangedWeapon.cpp src/RangedWeapon.h src/RenderObject.cpp src/RenderObject.h src/TextureObject.cpp src/TextureObject.h src/Building.cpp src/Building.h src/Villager.cpp src/Villager.h)
+		src/Texture.cpp src/Texture.h src/MoveableUnit.cpp src/MoveableUnit.h src/Weapon.cpp src/Weapon.h src/RangedWeapon.cpp src/RangedWeapon.h src/RenderObject.cpp src/RenderObject.h src/TextureObject.cpp src/TextureObject.h src/Building.cpp src/Building.h src/Villager.cpp src/Villager.h src/MapUnit.cpp src/MapUnit.h)
 
 
 #Qt5
