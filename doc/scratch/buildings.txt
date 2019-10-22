@@ -1,6 +1,6 @@
 Farm (viehzucht vs agriculture)
 Fisherman
-"Kochstube"
+Taverne
 Butcher Stand
 Müller (Bäcker)
 Wasseraufbereiterer?

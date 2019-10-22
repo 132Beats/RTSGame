@@ -1,3 +1,4 @@
 stb_image from Sean Barrett @MIT License or Public Domain (www.unlicense.org)
 OpenGL Window Example from The Qt Company Ltd. @BSD license
 * from The Cherno @ Apache 2 license
+Qt from The Qt Company Ltd. @LGPL v3 and GPL v3 open source license

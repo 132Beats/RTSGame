@@ -1,0 +1,7 @@
+Provide a re-linking mechanism for Qt libraries
+Provide a license copy & explicitly acknowledge Qt use
+Make a Qt source code copy available for customers
+Accept that Qt source code modifications are non-proprietary
+Make “open” consumer devices
+Accept Digital Rights Management terms, please see the GPL FAQ
+Take special consideration when attempting to enforce software patents FAQ
