@@ -1,10 +1,2 @@
-
-build/manjaro-clion/
-
-\.idea/
-
-.vs/
-
-out/build/x64-Debug/
-
-CMakeSettings.json
+RTSSolution/bin
+RTSSolution/.vs
