@@ -1,0 +1,22 @@
+Farm (viehzucht vs agriculture)
+Fisherman
+Taverne
+Butcher Stand
+Müller (Bäcker)
+Wasseraufbereiterer?
+
+Shepherd
+Lumberjack (Carpenter)
+Miner
+Mason
+Leatherworker
+Smithy (Weaponsmith vs Amorer vs Toolsmith)
+Fletcher
+Cartograph
+Priest?
+Outpost
+Kaserne
+Rittertunierfeld
+Schießstand
+
+

@@ -1,3 +1,0 @@
-generiert, balanced
-Biome: Wiese, Wald, Berg
-Startbiom=Wiese
